@@ -11,7 +11,7 @@
 \definecolor{UIorange}{RGB}{232,74,39}
 
 % set page geometry
-\usepackage[top=1in,left=0.75in,bottom=1.2in,right=1.0in]{geometry}
+\usepackage[top=1in,left=1in,bottom=1in,right=1.0in]{geometry}
 \usepackage{graphicx}
 
 % logo
@@ -50,12 +50,13 @@
 % add stuff to the doc
 \AtBeginDocument{%
     % Top block with logo
-    \begin{textblock*}{\textwidth}(0.75in,0.75in)
+    \begin{textblock*}{\textwidth}(1in,0.75in)
       \includegraphics[height=0.3125in]{\logofile}
     \end{textblock*}
 
     % Inset department address
-    \begin{textblock*}{4.0in} (0.75in,1.65625in)
+    %\begin{textblock*}{4.0in} (1in,1.65625in)
+    \begin{textblock*}{4.0in} (1in,1.40625in)
         {%
          % use medium bold here
         \color{UIblue}
@@ -67,6 +68,7 @@
         {%
         \color{UIblue}
         \footnotesize\par
+        \fontsize{9}{12}\selectfont
         %\fontsize{9}{10}\selectfont
         \fromdeptaddress%
         }
@@ -85,7 +87,7 @@
 \fancyfoot[L]{%
     % footer
     % specify the top right corner location of the footer
-    \begin{textblock*}{\textwidth}[1.0,0.0](7.75in,9.9375in)
+    \begin{textblock*}{\textwidth}[1.0,0.0](7.5in,9.9375in)
         {%
          \begin{flushright}
          \color{UIorange}
