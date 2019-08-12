@@ -11,7 +11,7 @@
 \definecolor{UIorange}{RGB}{232,74,39}
 
 % set page geometry
-\usepackage[top=1in,left=1in,bottom=1.25in,right=1.0in]{geometry}
+\usepackage[top=1in,left=1in,bottom=1in,right=1.0in]{geometry}
 \usepackage{graphicx}
 
 % logo
@@ -116,7 +116,9 @@
     \par\vspace{2ex}
     \closing,
 
-    \ifthenelse{\equal{\signaturefile}{}}{\bigskip\bigskip}{\includegraphics[width=1.2in]{\signaturefile}\\[-0.2\baselineskip]}
+    \ifthenelse{\equal{\signaturefile}{}}{%
+    	\bigskip%\bigskip%
+    }{\includegraphics[width=1.2in]{\signaturefile}\\[-0.2\baselineskip]}
 
     \fromname%
 }
